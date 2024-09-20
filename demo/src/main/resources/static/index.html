@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample Webpage</title>
+</head>
+<body>
+    <h1>F1 tire calculator</h1>
+
+    <form>
+        <label id="answer"></label><br>
+        <label for="field0">No. of Laps:</label>
+        <input type="number" id="field0" name="field0" min = "1"><br><br>
+
+        <label for="field1">Expected Piting Time Loss (in s)</label>
+        <input type="number" id="field1" name="field1" min = "0"><br><br>
+    
+        <label>No. of each tire:</label>
+        <table>
+            <tr>
+                <td><label for="field21">Soft</label></td>
+                <td><input type="number" id="field21" name="Soft" max="8" min = "0"></td>
+            </tr>
+            <tr>
+                <td><label for="field22">Medium</label></td>
+                <td><input type="number" id="field22" name="Medium" max = "3" min = "0"></td>
+            </tr>
+            <tr>
+                <td><label for="field23">Hard</label></td>
+                <td><input type="number" id="field23" name="Hard" max = "2" min = "0"></td>
+            </tr>
+        </table>
+        <br>
+    
+        <label>Expected quality loss per lap (%):</label>
+        <table>
+            <tr>
+                <td><label for="field31">Soft</label></td>
+                <td><input type="number" id="field31" name="Soft" max = "100" min = "0"></td>
+            </tr>
+            <tr>
+                <td><label for="field32">Medium</label></td>
+                <td><input type="number" id="field32" name="Medium" max = "100" min = "0"></td>
+            </tr>
+            <tr>
+                <td><label for="field33">Hard</label></td>
+                <td><input type="number" id="field33" name="Hard" max = "100" min = "0"></td>
+            </tr>
+        </table>
+        <br>
+
+        <label>Maximum laps per set:</label>
+        <table>
+            <tr>
+                <td><label for="field41">Soft</label></td>
+                <td><input type="number" id="field41" name="Soft" min = "0"></td>
+            </tr>
+            <tr>
+                <td><label for="field42">Medium</label></td>
+                <td><input type="number" id="field42" name="Medium" min = "0"></td>
+            </tr>
+            <tr>
+                <td><label for="field43">Hard</label></td>
+                <td><input type="number" id="field43" name="Hard" min = "0"></td>
+            </tr>
+        </table>
+        <br>
+    
+        <label>Expected time loss due to quality loss (per % per lap):</label>
+        <table>
+            <tr>
+                <td><label for="field51">Soft</label></td>
+                <td><input type="number" id="field51" name="Soft" min = "0" max = "100"></td>
+            </tr>
+            <tr>
+                <td><label for="field52">Medium</label></td>
+                <td><input type="number" id="field52" name="Medium" min = "0" max = "100"></td>
+            </tr>
+            <tr>
+                <td><label for="field53">Hard</label></td>
+                <td><input type="number" id="field53" name="Hard" min = "0" max = "100"></td>
+            </tr>
+        </table>
+        <br>
+    
+        <label>Expected fresh tire lap time:</label>
+        <table>
+            <tr>
+                <td><label for="field61">Soft</label></td>
+                <td><input type="number" id="field61" name="Soft" min = "0"></td>
+            </tr>
+            <tr>
+                <td><label for="field62">Medium</label></td>
+                <td><input type="number" id="field62" name="Medium" min = "0" ></td>
+            </tr>
+            <tr>
+                <td><label for="field63">Hard</label></td>
+                <td><input type="number" id="field63" name="Hard" min = "0"></td>
+            </tr>
+        </table>
+        <br>
+
+        
+    
+        <button type="button" onclick="button1Clicked()">Calculate</button>
+    </form>
+
+    <script src="spript.js"></script>
+</body>
+</html>
